@@ -1,0 +1,668 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update — International Digital Oral History Lab</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+<link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+<style type="text/css">
+    /* ===== Update page — scoped under .update-page wrapper ===== */
+    .update-page {
+        --update-bg: #F7F5F2;
+        --update-bg-card: #FFFFFF;
+        --update-text: #141413;
+        --update-text-secondary: #4A4A4A;
+        --update-text-muted: #6B6B6B;
+        --update-border: #E5E5E5;
+        --update-ucl: #983BFE;
+        --update-tud: #004b6e;
+        --update-amber: #B8860B;
+        --update-amber-bg: #FFF8E1;
+
+        font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: var(--update-bg);
+        color: var(--update-text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .update-page * { box-sizing: border-box; }
+
+    .update-page .update-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        .update-page .update-container { padding: 0 2.5rem; }
+    }
+
+    /* ===== Hero ===== */
+    .update-page .update-hero {
+        padding: 4rem 0 2.5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        .update-page .update-hero { padding: 6rem 2.5rem 3rem; }
+    }
+
+    .update-page .update-kicker {
+        display: inline-block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--update-text-muted);
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+    }
+
+    .update-page .update-hero h1 {
+        font-size: clamp(2.25rem, 5vw, 4rem);
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        line-height: 1.05;
+        margin: 0 0 1rem;
+        color: var(--update-text);
+    }
+
+    .update-page .update-hero h1 em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--update-text-secondary);
+    }
+
+    .update-page .update-tagline {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-size: clamp(1.125rem, 2vw, 1.5rem);
+        font-style: italic;
+        color: var(--update-text-secondary);
+        max-width: 640px;
+        margin: 0 0 2rem;
+        line-height: 1.4;
+    }
+
+    .update-page .update-meta-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem 1rem;
+        font-size: 0.875rem;
+        color: var(--update-text-muted);
+        padding: 1rem 0;
+        border-top: 1px solid var(--update-border);
+        border-bottom: 1px solid var(--update-border);
+    }
+
+    .update-page .update-meta-bar .dot {
+        width: 4px; height: 4px; border-radius: 50%;
+        background: var(--update-text-muted); opacity: 0.5;
+    }
+
+    .update-page .update-meta-bar time { font-variant-numeric: tabular-nums; }
+
+    /* ===== Grid ===== */
+    .update-page .update-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 6rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 1024px) {
+        .update-page .update-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 4rem 2.5rem 6rem;
+        }
+    }
+
+    /* ===== Column ===== */
+    .update-page .news-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .update-page .news-column-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1.25rem;
+        border-top: 3px solid var(--update-text);
+        border-bottom: 1px solid var(--update-border);
+    }
+
+    .update-page .news-column[data-source="ucl"] .news-column-header {
+        border-top-color: var(--update-ucl);
+    }
+    .update-page .news-column[data-source="tudarmstadt"] .news-column-header {
+        border-top-color: var(--update-tud);
+    }
+
+    .update-page .news-column-header .heading-block { min-width: 0; }
+
+    .update-page .news-column-header .source-kicker {
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+    }
+    .update-page .news-column[data-source="ucl"] .source-kicker { color: var(--update-ucl); }
+    .update-page .news-column[data-source="tudarmstadt"] .source-kicker { color: var(--update-tud); }
+
+    .update-page .news-column-header h2 {
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .update-page .view-all-link {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--update-text-secondary);
+        text-decoration: none;
+        white-space: nowrap;
+        transition: color 0.2s ease, gap 0.2s ease;
+    }
+
+    .update-page .view-all-link::after { content: '→'; transition: transform 0.2s ease; }
+
+    .update-page .view-all-link:hover {
+        color: var(--update-text);
+        gap: 0.55rem;
+    }
+
+    /* ===== Banner (stale source) ===== */
+    .update-page .source-banner {
+        font-size: 0.8125rem;
+        color: var(--update-amber);
+        background: var(--update-amber-bg);
+        border: 1px solid rgba(184, 134, 11, 0.25);
+        border-radius: 0.5rem;
+        padding: 0.625rem 0.875rem;
+        line-height: 1.4;
+    }
+
+    .update-page .source-banner strong { font-weight: 600; }
+
+    /* ===== News list ===== */
+    .update-page .news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    /* ===== News card ===== */
+    .update-page .news-card {
+        position: relative;
+        background-color: var(--update-bg-card);
+        border: 1px solid var(--update-border);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                    border-color 0.3s ease;
+        opacity: 0;
+        animation: updateCardIn 0.6s ease-out forwards;
+        animation-delay: calc(var(--card-idx, 0) * 0.08s);
+    }
+
+    @media (min-width: 768px) {
+        .update-page .news-card { padding: 1.75rem; }
+    }
+
+    @keyframes updateCardIn {
+        from { opacity: 0; transform: translateY(12px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .update-page .news-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.12),
+                    0 4px 10px -4px rgba(0, 0, 0, 0.05);
+    }
+
+    .update-page .news-column[data-source="ucl"] .news-card:hover {
+        border-color: rgba(152, 59, 254, 0.35);
+    }
+    .update-page .news-column[data-source="tudarmstadt"] .news-card:hover {
+        border-color: rgba(0, 75, 110, 0.35);
+    }
+
+    .update-page .news-card .news-date {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--update-text-muted);
+        font-variant-numeric: tabular-nums;
+        margin-bottom: 0.625rem;
+    }
+
+    .update-page .news-card h3 {
+        font-size: 1.1875rem;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        margin: 0 0 0.625rem;
+    }
+
+    @media (min-width: 768px) {
+        .update-page .news-card h3 { font-size: 1.3125rem; }
+    }
+
+    .update-page .news-card h3 a {
+        color: var(--update-text);
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-size: 0 1px;
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        transition: background-size 0.3s ease, color 0.2s ease;
+    }
+
+    .update-page .news-column[data-source="ucl"] .news-card h3 a:hover {
+        color: var(--update-ucl);
+    }
+    .update-page .news-column[data-source="tudarmstadt"] .news-card h3 a:hover {
+        color: var(--update-tud);
+    }
+
+    .update-page .news-card h3 a:hover {
+        background-size: 100% 1px;
+    }
+
+    .update-page .news-card .news-excerpt {
+        font-size: 0.9375rem;
+        color: var(--update-text-secondary);
+        line-height: 1.55;
+        margin: 0 0 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .update-page .news-card .news-readmore {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--update-text-secondary);
+        transition: gap 0.2s ease, color 0.2s ease;
+    }
+
+    .update-page .news-card .news-readmore::after {
+        content: '→';
+        transition: transform 0.2s ease;
+    }
+
+    .update-page .news-card:hover .news-readmore {
+        gap: 0.55rem;
+    }
+
+    .update-page .news-column[data-source="ucl"] .news-card:hover .news-readmore { color: var(--update-ucl); }
+    .update-page .news-column[data-source="tudarmstadt"] .news-card:hover .news-readmore { color: var(--update-tud); }
+
+    /* Make whole card clickable but preserve link semantics */
+    .update-page .news-card .card-anchor {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        text-decoration: none;
+    }
+    .update-page .news-card a:not(.card-anchor) { position: relative; z-index: 2; }
+
+    /* ===== Fallback CTA card (whole-column, when no JSON cache) ===== */
+    .update-page .fallback-card {
+        background: var(--update-bg-card);
+        border: 1px solid var(--update-border);
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: left;
+    }
+
+    .update-page .fallback-card h3 {
+        font-size: 1.25rem;
+        margin: 0 0 0.5rem;
+        font-weight: 600;
+    }
+
+    .update-page .fallback-card p {
+        color: var(--update-text-secondary);
+        font-size: 0.9375rem;
+        margin: 0 0 1.25rem;
+        line-height: 1.5;
+    }
+
+    .update-page .fallback-card .fallback-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.625rem 1.125rem;
+        background: var(--update-text);
+        color: #fff;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+    .update-page .fallback-card .fallback-cta:hover {
+        background: #2a2a2a;
+        transform: translateY(-1px);
+    }
+
+    /* ===== Loading skeleton ===== */
+    .update-page .news-skeleton {
+        background: var(--update-bg-card);
+        border: 1px solid var(--update-border);
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+    .update-page .skeleton-row {
+        height: 12px;
+        background: linear-gradient(90deg, #ececec 25%, #f5f5f5 37%, #ececec 63%);
+        background-size: 400% 100%;
+        border-radius: 4px;
+        animation: skeletonShimmer 1.4s ease-in-out infinite;
+        margin-bottom: 0.625rem;
+    }
+    .update-page .skeleton-row.short { width: 30%; }
+    .update-page .skeleton-row.title { height: 18px; width: 85%; }
+    .update-page .skeleton-row.line  { width: 100%; }
+    .update-page .skeleton-row.line.last { width: 60%; }
+
+    @keyframes skeletonShimmer {
+        0% { background-position: 100% 50%; }
+        100% { background-position: 0 50%; }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+        .update-page .news-card,
+        .update-page .skeleton-row,
+        .update-page .news-card h3 a,
+        .update-page .news-card .news-readmore,
+        .update-page .view-all-link { animation: none !important; transition: none !important; }
+        .update-page .news-card { opacity: 1 !important; transform: none !important; }
+    }
+</style>
+
+<div class="update-page">
+    <header class="update-hero">
+        <span class="update-kicker">Updates</span>
+        <h1>Latest <em>from the Lab</em></h1>
+        <p class="update-tagline">News, lectures, and activities from our partner institutions, refreshed automatically every day.</p>
+        <div class="update-meta-bar" data-meta-bar>
+            <span>Updated <time data-last-updated datetime="">just now</time></span>
+            <span class="dot" aria-hidden="true"></span>
+            <span><span data-items-per-source>6</span> latest items per source</span>
+        </div>
+    </header>
+
+    <section class="update-grid" aria-label="Latest news from partner institutions">
+        <article class="news-column" data-source="ucl">
+            <header class="news-column-header">
+                <div class="heading-block">
+                    <span class="source-kicker">UCL Information Studies</span>
+                    <h2>Recent News</h2>
+                </div>
+                <a class="view-all-link"
+                   href="https://www.ucl.ac.uk/arts-humanities/information-studies/news"
+                   target="_blank" rel="noopener">View all</a>
+            </header>
+            <div class="news-list" data-news-list="ucl" aria-busy="true">
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+            </div>
+        </article>
+
+        <article class="news-column" data-source="tudarmstadt">
+            <header class="news-column-header">
+                <div class="heading-block">
+                    <span class="source-kicker">TU Darmstadt — HDSM</span>
+                    <h2>Recent News</h2>
+                </div>
+                <a class="view-all-link"
+                   href="https://hdsm.hypotheses.org/category/digital_oral_history_lab"
+                   target="_blank" rel="noopener">View all</a>
+            </header>
+            <div class="news-list" data-news-list="tudarmstadt" aria-busy="true">
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+            </div>
+        </article>
+    </section>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+
+        // ---- Configuration ----
+        // The cache JSON is built daily by .github/workflows/fetch-news.yml and
+        // committed to main. raw.githubusercontent.com sends CORS-friendly headers
+        // and caches for ~5 minutes, which is plenty for a daily refresh.
+        // If you fork the repo, point this at your own owner/repo path.
+        var NEWS_CACHE_URL = 'https://raw.githubusercontent.com/International-Digital-Oral-History-Lab/IDOHL-site/main/landing_page/data/news-cache.json';
+
+        var FALLBACK_LINKS = {
+            ucl: {
+                label: 'UCL Information Studies',
+                url:   'https://www.ucl.ac.uk/arts-humanities/information-studies/news',
+                blurb: 'Open the UCL Information Studies news page to see the latest announcements, studentships, and research updates.'
+            },
+            tudarmstadt: {
+                label: 'TU Darmstadt — HDSM',
+                url:   'https://hdsm.hypotheses.org/category/digital_oral_history_lab',
+                blurb: 'Open the HDSM blog to read the latest posts on the Digital Oral History Lab from TU Darmstadt.'
+            }
+        };
+
+        // ---- Helpers ----
+        function escapeHTML(s) {
+            return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+                return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+            });
+        }
+
+        function formatDate(isoYMD) {
+            if (!isoYMD) return '';
+            var parts = String(isoYMD).split('-');
+            if (parts.length !== 3) return isoYMD;
+            var d = new Date(Date.UTC(+parts[0], +parts[1] - 1, +parts[2]));
+            if (isNaN(d.getTime())) return isoYMD;
+            try {
+                return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+            } catch (e) {
+                return isoYMD;
+            }
+        }
+
+        function formatTimestamp(iso) {
+            if (!iso) return '';
+            var d = new Date(iso);
+            if (isNaN(d.getTime())) return '';
+            try {
+                return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+            } catch (e) {
+                return iso.slice(0, 10);
+            }
+        }
+
+        function renderNewsCard(item, idx) {
+            var date = formatDate(item.date);
+            var url = item.url || '#';
+            var dateAttr = item.date ? ' datetime="' + escapeHTML(item.date) + '"' : '';
+            return ''
+                + '<article class="news-card" style="--card-idx: ' + idx + ';">'
+                +   '<a class="card-anchor" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="' + escapeHTML(item.title || '') + '"></a>'
+                +   (date ? '<time class="news-date"' + dateAttr + '>' + escapeHTML(date) + '</time>' : '')
+                +   '<h3><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(item.title || '') + '</a></h3>'
+                +   (item.excerpt ? '<p class="news-excerpt">' + escapeHTML(item.excerpt) + '</p>' : '')
+                +   '<a class="news-readmore" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Read more</a>'
+                + '</article>';
+        }
+
+        function renderFallback(sourceKey, listEl) {
+            var f = FALLBACK_LINKS[sourceKey];
+            if (!f) return;
+            listEl.innerHTML = ''
+                + '<div class="fallback-card">'
+                +   '<h3>' + escapeHTML(f.label) + '</h3>'
+                +   '<p>' + escapeHTML(f.blurb) + '</p>'
+                +   '<a class="fallback-cta" href="' + escapeHTML(f.url) + '" target="_blank" rel="noopener">Visit the source <span aria-hidden="true">→</span></a>'
+                + '</div>';
+            listEl.setAttribute('aria-busy', 'false');
+        }
+
+        function renderStaleBanner(listEl, staleSince) {
+            var when = staleSince ? formatTimestamp(staleSince) : '';
+            var msg = when
+                ? 'Live fetch failed. Showing cached items from <strong>' + escapeHTML(when) + '</strong>.'
+                : 'Live fetch failed. Showing previously cached items.';
+            var div = document.createElement('div');
+            div.className = 'source-banner';
+            div.innerHTML = msg;
+            listEl.parentNode.insertBefore(div, listEl);
+        }
+
+        function renderColumn(sourceKey, sourceData, listEl) {
+            if (!sourceData || !Array.isArray(sourceData.items) || sourceData.items.length === 0) {
+                renderFallback(sourceKey, listEl);
+                return;
+            }
+            if (sourceData.fetchOk === false) {
+                renderStaleBanner(listEl, sourceData.staleSince);
+            }
+            var html = sourceData.items.map(renderNewsCard).join('');
+            listEl.innerHTML = html;
+            listEl.setAttribute('aria-busy', 'false');
+        }
+
+        function renderAllFallback() {
+            Object.keys(FALLBACK_LINKS).forEach(function (key) {
+                var listEl = document.querySelector('[data-news-list="' + key + '"]');
+                if (listEl) renderFallback(key, listEl);
+            });
+        }
+
+        function renderMetaBar(payload) {
+            var timeEl = document.querySelector('[data-last-updated]');
+            if (!timeEl) return;
+            var when = formatTimestamp(payload && payload.lastFetchedAt);
+            if (when) {
+                timeEl.textContent = when;
+                timeEl.setAttribute('datetime', payload.lastFetchedAt);
+            } else {
+                timeEl.textContent = 'recently';
+            }
+            var perSource = payload && payload.itemsPerFeed;
+            var perEl = document.querySelector('[data-items-per-source]');
+            if (perEl && typeof perSource === 'number' && perSource > 0) {
+                perEl.textContent = String(perSource);
+            }
+        }
+
+        function init() {
+            // Avoid double-init if Omeka-S re-runs the block
+            if (window.__idohlUpdateInited) return;
+            window.__idohlUpdateInited = true;
+
+            fetch(NEWS_CACHE_URL, { cache: 'no-cache' })
+                .then(function (r) {
+                    if (!r.ok) throw new Error('HTTP ' + r.status);
+                    return r.json();
+                })
+                .then(function (payload) {
+                    if (!payload || !payload.sources) {
+                        renderAllFallback();
+                        return;
+                    }
+                    renderMetaBar(payload);
+                    renderColumn('ucl', payload.sources.ucl, document.querySelector('[data-news-list="ucl"]'));
+                    renderColumn('tudarmstadt', payload.sources.tudarmstadt, document.querySelector('[data-news-list="tudarmstadt"]'));
+                })
+                .catch(function (err) {
+                    if (window.console && console.warn) {
+                        console.warn('IDOHL Update: news cache unreachable —', err && err.message);
+                    }
+                    renderAllFallback();
+                });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+</script>
+
+<noscript>
+    <style>
+        .update-page [aria-busy="true"] { display: none !important; }
+        .update-page .noscript-fallback {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+    <div class="update-page">
+        <div class="update-grid">
+            <article class="news-column" data-source="ucl">
+                <div class="noscript-fallback">
+                    <div class="fallback-card">
+                        <h3>UCL Information Studies</h3>
+                        <p>Visit the UCL Information Studies news page for the latest announcements.</p>
+                        <a class="fallback-cta" href="https://www.ucl.ac.uk/arts-humanities/information-studies/news">Open UCL News →</a>
+                    </div>
+                </div>
+            </article>
+            <article class="news-column" data-source="tudarmstadt">
+                <div class="noscript-fallback">
+                    <div class="fallback-card">
+                        <h3>TU Darmstadt — HDSM</h3>
+                        <p>Visit the HDSM blog for the latest Digital Oral History Lab posts.</p>
+                        <a class="fallback-cta" href="https://hdsm.hypotheses.org/category/digital_oral_history_lab">Open HDSM Blog →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</noscript>

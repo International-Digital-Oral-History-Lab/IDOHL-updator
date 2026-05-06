@@ -1,0 +1,94 @@
+{
+  "lastFetchedAt": "2026-05-06T23:01:57.457Z",
+  "itemsPerFeed": 6,
+  "sources": {
+    "ucl": {
+      "label": "UCL Information Studies",
+      "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
+      "fetchOk": true,
+      "lastFetchedAt": "2026-05-06T23:01:57.457Z",
+      "items": [
+        {
+          "title": "AHRC Collaborative Doctoral Partnership (CDP) PhD Studentship",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-phd-studentship",
+          "date": "2026-04-22",
+          "excerpt": "Rediscovering a Woman Collector at the British Library: New Sources and Perspectives on Sarah Sophia Banks"
+        },
+        {
+          "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-studentship-0",
+          "date": "2026-03-27",
+          "excerpt": "Moving the Frame: New Computational Practices for the Description and Organisation of the BT Film Collection"
+        },
+        {
+          "title": "UCL ranked 3rd in the world for Library and Information Management",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ucl-ranked-3rd-world-library-and-information-management",
+          "date": "2026-03-27",
+          "excerpt": "In the 2026 QS World University Rankings by Subject"
+        },
+        {
+          "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-studentship",
+          "date": "2026-03-20",
+          "excerpt": "Invisible Hands: Migrant Labour and British Craft in the 18th Century (UCL & V&A)"
+        },
+        {
+          "title": "Dr Andreas Vlachidis at the Thessaloniki TELL Winter School",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/dr-andreas-vlachidis-thessaloniki-tell-winter-school",
+          "date": "2026-03-20",
+          "excerpt": "Dr Andreas Vlachidis, Associate Professor at University College London's Department of Information Studies, was among the distinguished participants at the Thessaloniki Winter…"
+        },
+        {
+          "title": "Dr Andreas Vlachidis Awarded HSDS Small Grant under UKRI AHRC RICHeS Initiative",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news-ucl-information-studies/dr-andreas-vlachidis-awarded-hsds-small-grant-under-ukri-ahrc-riches-initiative",
+          "date": "2026-03-10",
+          "excerpt": "Dr Andreas Vlachidis, Associate Professor in Information Science, has been awarded funding through the HSDS Small Grants Programme."
+        }
+      ]
+    },
+    "tudarmstadt": {
+      "label": "TU Darmstadt — HDSM",
+      "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
+      "fetchOk": true,
+      "lastFetchedAt": "2026-05-06T23:01:57.457Z",
+      "items": [
+        {
+          "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
+          "url": "https://hdsm.hypotheses.org/6578",
+          "date": "2025-11-17",
+          "excerpt": "On 9th July, Prof. Julianne Nyhan gave a lecture on “Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings” as a part of the „Digital…"
+        },
+        {
+          "title": "HDSM Team contributes to the Connected Past Conference 2025 (16-19 September, Coimbra)",
+          "url": "https://hdsm.hypotheses.org/5990",
+          "date": "2025-09-22",
+          "excerpt": "On September 16-19, the Connected Past Conference 2025 took place in Coimbra, Portugal. This assembly aims to provide discussion platforms for the development of original and…"
+        },
+        {
+          "title": "International Digital Oral History Lab at the UCL’s Festival of Digital Research, Innovation & Scholarship",
+          "url": "https://hdsm.hypotheses.org/5336",
+          "date": "2025-08-25",
+          "excerpt": "It is with great pleasure to share the news about the presentation of the HDSM Project at the Festival of Digital Research, Innovation & Scholarship at UCL (London) on 15th July…"
+        },
+        {
+          "title": "The Video Recording Release of the sixth Susan Hockey Lecture by Prof. Julianne Nyhan",
+          "url": "https://hdsm.hypotheses.org/5284",
+          "date": "2025-07-03",
+          "excerpt": "The video of the lecture is available here. The sixth Susan Hockey Lecture in Digital Humanities was given on 22 May 2025 by Prof Julianne Nyhan. It was devoted to ‘Oral History…"
+        },
+        {
+          "title": "2025 Susan Hockey Lecture – Oral History as Data? Critically approaching the digital turn in method, meaning and recollection",
+          "url": "https://hdsm.hypotheses.org/4911",
+          "date": "2025-04-09",
+          "excerpt": "We are delighted to invite you to the 2025 Susan Hockey Lecture – Oral History as Data? Critically approaching the digital turn in method, meaning and recollection – to be…"
+        },
+        {
+          "title": "3 February: A Final lecture for the seminar series “Oral History and the digital transformation. Some historical, ethical and methodological remarks” by Prof. Dr. Linde Apel",
+          "url": "https://hdsm.hypotheses.org/4595",
+          "date": "2025-01-23",
+          "excerpt": "The video recording of the video is available online via the following link. Prof. Dr. Linde Apel will give an open presentation, “Oral History and the Digital Transformation…"
+        }
+      ]
+    }
+  }
+}

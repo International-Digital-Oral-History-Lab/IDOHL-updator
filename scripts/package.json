@@ -1,0 +1,16 @@
+{
+  "name": "idohl-news-fetcher",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Aggregator that pulls UCL + TU Darmstadt news into landing_page/data/news-cache.json. Run by .github/workflows/fetch-news.yml.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fetch": "node fetch-news.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}
