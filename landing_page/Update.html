@@ -331,6 +331,68 @@
         }
     }
 
+    /* ===== News card media (thumbnail) ===== */
+    .update-page .news-card-media {
+        position: relative;
+        display: block;
+        margin: -1.5rem -1.5rem 1.25rem;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        background: linear-gradient(135deg, #ECECEC 0%, #F5F5F5 100%);
+    }
+
+    @media (min-width: 768px) {
+        .update-page .news-card-media {
+            margin: -1.75rem -1.75rem 1.25rem;
+        }
+    }
+
+    /* Defensive image styles — Omeka-S theme often applies max-width / object-fit / border-radius globally */
+    .update-page .news-card-media img {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none !important;
+        max-height: none !important;
+        min-width: 0 !important;
+        object-fit: cover !important;
+        aspect-ratio: auto !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .update-page .news-card:hover .news-card-media img {
+        transform: scale(1.04);
+    }
+
+    /* Branded fallback when a feed item has no image */
+    .update-page .news-card-media--placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 0.6875rem;
+        font-weight: 600;
+    }
+
+    .update-page .news-column[data-source="ucl"] .news-card-media--placeholder {
+        background: linear-gradient(135deg, rgba(152, 59, 254, 0.14) 0%, rgba(152, 59, 254, 0.04) 100%);
+        color: var(--update-ucl);
+    }
+
+    .update-page .news-column[data-source="tudarmstadt"] .news-card-media--placeholder {
+        background: linear-gradient(135deg, rgba(0, 75, 110, 0.14) 0%, rgba(0, 75, 110, 0.04) 100%);
+        color: var(--update-tud);
+    }
+
     .update-page .news-card:hover {
         transform: translateY(-3px);
         box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.12),
@@ -519,6 +581,13 @@
         width: 60%;
     }
 
+    .update-page .skeleton-row.media {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin: -1.5rem -1.5rem 1.25rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+
     @keyframes skeletonShimmer {
         0% {
             background-position: 100% 50%;
@@ -552,8 +621,7 @@
     <header class="update-hero">
         <span class="update-kicker">Updates</span>
         <h1>Latest <em>from the Lab</em></h1>
-        <p class="update-tagline">News, lectures, and activities from our partner institutions, refreshed automatically
-            twice a week.</p>
+        <p class="update-tagline">News, activities, and opportunities from our partner institutions.</p>
         <div class="update-meta-bar" data-meta-bar>
             <span>Updated <time data-last-updated datetime="">just now</time></span>
             <span class="dot" aria-hidden="true"></span>
@@ -575,36 +643,42 @@
             </header>
             <div class="news-list" data-news-list="ucl" aria-busy="true">
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
@@ -633,36 +707,42 @@
             </header>
             <div class="news-list" data-news-list="tudarmstadt" aria-busy="true">
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
                     <div class="skeleton-row line last"></div>
                 </div>
                 <div class="news-skeleton">
+                    <div class="skeleton-row media"></div>
                     <div class="skeleton-row short"></div>
                     <div class="skeleton-row title"></div>
                     <div class="skeleton-row line"></div>
@@ -689,7 +769,7 @@
         // committed to main. raw.githubusercontent.com sends CORS-friendly headers
         // and caches for ~5 minutes, which is plenty for a daily refresh.
         // If you fork the repo, point this at your own owner/repo path.
-        var NEWS_CACHE_URL = 'https://raw.githubusercontent.com/International-Digital-Oral-History-Lab/IDOHL-site/main/landing_page/data/news-cache.json';
+        var NEWS_CACHE_URL = 'https://raw.githubusercontent.com/International-Digital-Oral-History-Lab/IDOHL-updator/main/landing_page/data/news-cache.json';
 
         var FALLBACK_LINKS = {
             ucl: {
@@ -702,6 +782,12 @@
                 url: 'https://hdsm.hypotheses.org/category/digital_oral_history_lab',
                 blurb: 'Open the HDSM blog to read the latest posts on the Digital Oral History Lab from TU Darmstadt.'
             }
+        };
+
+        // Short label shown on the gradient placeholder when a feed item has no image
+        var PLACEHOLDER_LABELS = {
+            ucl: 'Information Studies',
+            tudarmstadt: 'HDSM'
         };
 
         // ---- Helpers ----
@@ -735,13 +821,29 @@
             }
         }
 
-        function renderNewsCard(item, idx) {
+        function renderMedia(item, sourceKey) {
+            if (item.image) {
+                return '<div class="news-card-media">'
+                    + '<img src="' + escapeHTML(item.image) + '"'
+                    + ' alt=""'
+                    + ' loading="lazy" decoding="async"'
+                    + ' referrerpolicy="no-referrer" />'
+                    + '</div>';
+            }
+            var label = PLACEHOLDER_LABELS[sourceKey] || 'IDOHL';
+            return '<div class="news-card-media news-card-media--placeholder" aria-hidden="true">'
+                + escapeHTML(label)
+                + '</div>';
+        }
+
+        function renderNewsCard(item, idx, sourceKey) {
             var date = formatDate(item.date);
             var url = item.url || '#';
             var dateAttr = item.date ? ' datetime="' + escapeHTML(item.date) + '"' : '';
             return ''
                 + '<article class="news-card" style="--card-idx: ' + idx + ';">'
                 + '<a class="card-anchor" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="' + escapeHTML(item.title || '') + '"></a>'
+                + renderMedia(item, sourceKey)
                 + (date ? '<time class="news-date"' + dateAttr + '>' + escapeHTML(date) + '</time>' : '')
                 + '<h3><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(item.title || '') + '</a></h3>'
                 + (item.excerpt ? '<p class="news-excerpt">' + escapeHTML(item.excerpt) + '</p>' : '')
@@ -780,7 +882,9 @@
             if (sourceData.fetchOk === false) {
                 renderStaleBanner(listEl, sourceData.staleSince);
             }
-            var html = sourceData.items.map(renderNewsCard).join('');
+            var html = sourceData.items.map(function (item, idx) {
+                return renderNewsCard(item, idx, sourceKey);
+            }).join('');
             listEl.innerHTML = html;
             listEl.setAttribute('aria-busy', 'false');
         }

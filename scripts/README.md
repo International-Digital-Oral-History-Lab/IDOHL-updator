@@ -23,7 +23,7 @@ institution twice a week (Mon & Thu) and commits a JSON cache the static
 ┌──────────────────────────────────────────────────┐
 │ raw.githubusercontent.com/                       │
 │   International-Digital-Oral-History-Lab/        │
-│     IDOHL-site/main/                             │
+│     IDOHL-updator/main/                          │
 │       landing_page/data/news-cache.json          │
 │                                                  │
 │   (CORS allowed; ~5 min CDN cache)               │
@@ -37,8 +37,16 @@ institution twice a week (Mon & Thu) and commits a JSON cache the static
 
 | Source | Method |
 |---|---|
-| TU Darmstadt — HDSM | RSS 2.0 (`hdsm.hypotheses.org/.../feed/`) — Anubis bot challenge bypassed via Feedly UA |
-| UCL Information Studies | HTML scrape (cheerio) — selector `.generic-feed-listing-item` |
+| TU Darmstadt — HDSM | RSS 2.0 (`hdsm.hypotheses.org/.../feed/`) — Anubis bot challenge bypassed via Feedly UA. The category feed is excerpt-only, so each post URL is fetched a second time and `og:image` is read from `<head>` to populate the card thumbnail (≈ 6 extra HTTP calls per run). |
+| UCL Information Studies | HTML scrape (cheerio) — selector `.generic-feed-listing-item`. Thumbnail is the first `<img>` inside each item (with `srcset` / `data-src` fallbacks). |
+
+### Item shape written to `news-cache.json`
+
+```ts
+{ title: string, url: string, date: 'YYYY-MM-DD', excerpt: string, image: string /* URL, or '' when none */ }
+```
+
+`image: ''` is rendered as a brand-tinted gradient placeholder by `Update.html`.
 
 ## Initial setup (one-time)
 
@@ -55,7 +63,7 @@ The repo is already public — `raw.githubusercontent.com` can be read anonymous
    `chore(news): refresh cache <timestamp>` on `main`.
 4. **Verify the JSON is reachable**:
    ```
-   https://raw.githubusercontent.com/International-Digital-Oral-History-Lab/IDOHL-site/main/landing_page/data/news-cache.json
+   https://raw.githubusercontent.com/International-Digital-Oral-History-Lab/IDOHL-updator/main/landing_page/data/news-cache.json
    ```
    Should return JSON with `itemsPerFeed: 6` and 6 items per source.
 5. **Upload `Update.html` as an Omeka-S page** and add it to navigation

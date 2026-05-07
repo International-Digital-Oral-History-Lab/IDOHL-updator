@@ -153,10 +153,31 @@ async function fetchTUDarmstadt() {
             url: link,
             date: d && !isNaN(d) ? isoDate(d) : '',
             excerpt: truncate(desc),
+            image: '', // filled in below
         });
     });
 
+    // The category feed is excerpt-only — no content:encoded, enclosure, or
+    // media:thumbnail. To get a thumbnail we have to follow each post URL and
+    // read og:image from the rendered page head. Keep this best-effort: if a
+    // post fetch fails we leave image empty and the page falls back to the
+    // branded placeholder.
+    await Promise.all(items.map(async (item) => {
+        item.image = await fetchTUDPostImage(item.url);
+    }));
+
     return { ok: items.length > 0, items };
+}
+
+async function fetchTUDPostImage(url) {
+    const body = await httpGet(url, UCL_UA);
+    if (!body) return '';
+    try {
+        const $ = cheerio.load(body);
+        return ($('meta[property="og:image"]').first().attr('content') || '').trim();
+    } catch {
+        return '';
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -190,12 +211,14 @@ async function fetchUCL() {
             $el.find('.generic-feed-listing-item__paragraph--date').first().text()
         );
         const d = parseUKDate(dateRaw);
+        const image = extractUCLImage($el);
 
         items.push({
             title,
             url,
             date: d ? isoDate(d) : '',
             excerpt: truncate(excerpt),
+            image,
         });
     });
 
@@ -204,6 +227,26 @@ async function fetchUCL() {
     }
 
     return { ok: items.length > 0, items };
+}
+
+// UCL listings render thumbnails as <img> inside the listing item. Some are
+// lazy-loaded (data-src) and most carry a srcset of responsive variants. Pick
+// the first usable URL and resolve protocol-relative / root-relative paths.
+function extractUCLImage($el) {
+    const $img = $el.find('img').first();
+    if (!$img.length) return '';
+
+    let src = ($img.attr('src') || '').trim();
+    if (!src) src = ($img.attr('data-src') || '').trim();
+    if (!src) {
+        const srcset = ($img.attr('srcset') || '').trim();
+        if (srcset) src = srcset.split(',')[0].trim().split(/\s+/)[0] || '';
+    }
+
+    if (!src) return '';
+    if (src.startsWith('//')) return 'https:' + src;
+    if (src.startsWith('/')) return 'https://www.ucl.ac.uk' + src;
+    return src;
 }
 
 // ---------------------------------------------------------------------------
