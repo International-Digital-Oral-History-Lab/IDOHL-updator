@@ -31,7 +31,9 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    .update-page * { box-sizing: border-box; }
+    .update-page * {
+        box-sizing: border-box;
+    }
 
     .update-page .update-container {
         max-width: 1400px;
@@ -40,12 +42,14 @@
     }
 
     @media (min-width: 1200px) {
-        .update-page .update-container { padding: 0 2.5rem; }
+        .update-page .update-container {
+            padding: 0 2.5rem;
+        }
     }
 
     /* ===== Hero ===== */
     .update-page .update-hero {
-        padding: 4rem 0 2.5rem;
+        padding: 1.5rem 0 2rem;
         max-width: 1400px;
         margin: 0 auto;
         padding-left: 1.5rem;
@@ -53,7 +57,9 @@
     }
 
     @media (min-width: 1200px) {
-        .update-page .update-hero { padding: 6rem 2.5rem 3rem; }
+        .update-page .update-hero {
+            padding: 2.5rem 2.5rem 2.5rem;
+        }
     }
 
     .update-page .update-kicker {
@@ -105,11 +111,16 @@
     }
 
     .update-page .update-meta-bar .dot {
-        width: 4px; height: 4px; border-radius: 50%;
-        background: var(--update-text-muted); opacity: 0.5;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--update-text-muted);
+        opacity: 0.5;
     }
 
-    .update-page .update-meta-bar time { font-variant-numeric: tabular-nums; }
+    .update-page .update-meta-bar time {
+        font-variant-numeric: tabular-nums;
+    }
 
     /* ===== Grid ===== */
     .update-page .update-grid {
@@ -138,23 +149,54 @@
 
     .update-page .news-column-header {
         display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        gap: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.875rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.5rem;
         border-top: 3px solid var(--update-text);
         border-bottom: 1px solid var(--update-border);
+        overflow: visible !important;
     }
 
     .update-page .news-column[data-source="ucl"] .news-column-header {
         border-top-color: var(--update-ucl);
     }
+
     .update-page .news-column[data-source="tudarmstadt"] .news-column-header {
         border-top-color: var(--update-tud);
     }
 
-    .update-page .news-column-header .heading-block { min-width: 0; }
+    /* Defensive image styles — Omeka-S theme tends to apply max-width/object-fit/border-radius globally */
+    .update-page .institution-logo {
+        display: block !important;
+        height: 36px !important;
+        width: auto !important;
+        max-width: 220px !important;
+        max-height: 36px !important;
+        min-width: 0 !important;
+        object-fit: contain !important;
+        aspect-ratio: auto !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    @media (min-width: 768px) {
+        .update-page .institution-logo {
+            height: 42px !important;
+            max-height: 42px !important;
+            max-width: 260px !important;
+        }
+    }
+
+    .update-page .news-column-header .heading-block {
+        min-width: 0;
+        width: 100%;
+    }
 
     .update-page .news-column-header .source-kicker {
         display: block;
@@ -164,8 +206,14 @@
         font-weight: 600;
         margin-bottom: 0.4rem;
     }
-    .update-page .news-column[data-source="ucl"] .source-kicker { color: var(--update-ucl); }
-    .update-page .news-column[data-source="tudarmstadt"] .source-kicker { color: var(--update-tud); }
+
+    .update-page .news-column[data-source="ucl"] .source-kicker {
+        color: var(--update-ucl);
+    }
+
+    .update-page .news-column[data-source="tudarmstadt"] .source-kicker {
+        color: var(--update-tud);
+    }
 
     .update-page .news-column-header h2 {
         font-size: clamp(1.5rem, 2.5vw, 2rem);
@@ -175,24 +223,57 @@
         line-height: 1.2;
     }
 
-    .update-page .view-all-link {
-        flex-shrink: 0;
-        display: inline-flex;
+    /* ===== Prominent view-all CTA (column footer) ===== */
+    .update-page .view-all-cta {
+        margin-top: 0.5rem;
+        display: flex;
         align-items: center;
-        gap: 0.35rem;
-        font-size: 0.875rem;
-        font-weight: 500;
-        color: var(--update-text-secondary);
-        text-decoration: none;
-        white-space: nowrap;
-        transition: color 0.2s ease, gap 0.2s ease;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.125rem 1.5rem;
+        border: 2px solid currentColor;
+        border-radius: 1rem;
+        text-decoration: none !important;
+        font-weight: 600;
+        font-size: 0.9375rem;
+        background: transparent;
+        transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                    color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        line-height: 1.3;
     }
 
-    .update-page .view-all-link::after { content: '→'; transition: transform 0.2s ease; }
+    .update-page .news-column[data-source="ucl"] .view-all-cta {
+        color: var(--update-ucl);
+    }
 
-    .update-page .view-all-link:hover {
-        color: var(--update-text);
-        gap: 0.55rem;
+    .update-page .news-column[data-source="tudarmstadt"] .view-all-cta {
+        color: var(--update-tud);
+    }
+
+    .update-page .view-all-cta:hover {
+        transform: translateY(-2px);
+    }
+
+    .update-page .news-column[data-source="ucl"] .view-all-cta:hover {
+        background: rgba(152, 59, 254, 0.08);
+        box-shadow: 0 12px 28px -14px rgba(152, 59, 254, 0.45);
+    }
+
+    .update-page .news-column[data-source="tudarmstadt"] .view-all-cta:hover {
+        background: rgba(0, 75, 110, 0.08);
+        box-shadow: 0 12px 28px -14px rgba(0, 75, 110, 0.45);
+    }
+
+    .update-page .view-all-cta-arrow {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .update-page .view-all-cta:hover .view-all-cta-arrow {
+        transform: translateX(6px);
     }
 
     /* ===== Banner (stale source) ===== */
@@ -206,7 +287,9 @@
         line-height: 1.4;
     }
 
-    .update-page .source-banner strong { font-weight: 600; }
+    .update-page .source-banner strong {
+        font-weight: 600;
+    }
 
     /* ===== News list ===== */
     .update-page .news-list {
@@ -223,31 +306,41 @@
         border-radius: 1rem;
         padding: 1.5rem;
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-                    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-                    border-color 0.3s ease;
+            box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 0.3s ease;
         opacity: 0;
         animation: updateCardIn 0.6s ease-out forwards;
         animation-delay: calc(var(--card-idx, 0) * 0.08s);
     }
 
     @media (min-width: 768px) {
-        .update-page .news-card { padding: 1.75rem; }
+        .update-page .news-card {
+            padding: 1.75rem;
+        }
     }
 
     @keyframes updateCardIn {
-        from { opacity: 0; transform: translateY(12px); }
-        to   { opacity: 1; transform: translateY(0); }
+        from {
+            opacity: 0;
+            transform: translateY(12px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .update-page .news-card:hover {
         transform: translateY(-3px);
         box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.12),
-                    0 4px 10px -4px rgba(0, 0, 0, 0.05);
+            0 4px 10px -4px rgba(0, 0, 0, 0.05);
     }
 
     .update-page .news-column[data-source="ucl"] .news-card:hover {
         border-color: rgba(152, 59, 254, 0.35);
     }
+
     .update-page .news-column[data-source="tudarmstadt"] .news-card:hover {
         border-color: rgba(0, 75, 110, 0.35);
     }
@@ -272,7 +365,9 @@
     }
 
     @media (min-width: 768px) {
-        .update-page .news-card h3 { font-size: 1.3125rem; }
+        .update-page .news-card h3 {
+            font-size: 1.3125rem;
+        }
     }
 
     .update-page .news-card h3 a {
@@ -288,6 +383,7 @@
     .update-page .news-column[data-source="ucl"] .news-card h3 a:hover {
         color: var(--update-ucl);
     }
+
     .update-page .news-column[data-source="tudarmstadt"] .news-card h3 a:hover {
         color: var(--update-tud);
     }
@@ -327,8 +423,13 @@
         gap: 0.55rem;
     }
 
-    .update-page .news-column[data-source="ucl"] .news-card:hover .news-readmore { color: var(--update-ucl); }
-    .update-page .news-column[data-source="tudarmstadt"] .news-card:hover .news-readmore { color: var(--update-tud); }
+    .update-page .news-column[data-source="ucl"] .news-card:hover .news-readmore {
+        color: var(--update-ucl);
+    }
+
+    .update-page .news-column[data-source="tudarmstadt"] .news-card:hover .news-readmore {
+        color: var(--update-tud);
+    }
 
     /* Make whole card clickable but preserve link semantics */
     .update-page .news-card .card-anchor {
@@ -337,7 +438,11 @@
         z-index: 1;
         text-decoration: none;
     }
-    .update-page .news-card a:not(.card-anchor) { position: relative; z-index: 2; }
+
+    .update-page .news-card a:not(.card-anchor) {
+        position: relative;
+        z-index: 2;
+    }
 
     /* ===== Fallback CTA card (whole-column, when no JSON cache) ===== */
     .update-page .fallback-card {
@@ -374,6 +479,7 @@
         font-weight: 500;
         transition: background-color 0.2s ease, transform 0.2s ease;
     }
+
     .update-page .fallback-card .fallback-cta:hover {
         background: #2a2a2a;
         transform: translateY(-1px);
@@ -386,6 +492,7 @@
         border-radius: 1rem;
         padding: 1.5rem;
     }
+
     .update-page .skeleton-row {
         height: 12px;
         background: linear-gradient(90deg, #ececec 25%, #f5f5f5 37%, #ececec 63%);
@@ -394,24 +501,50 @@
         animation: skeletonShimmer 1.4s ease-in-out infinite;
         margin-bottom: 0.625rem;
     }
-    .update-page .skeleton-row.short { width: 30%; }
-    .update-page .skeleton-row.title { height: 18px; width: 85%; }
-    .update-page .skeleton-row.line  { width: 100%; }
-    .update-page .skeleton-row.line.last { width: 60%; }
+
+    .update-page .skeleton-row.short {
+        width: 30%;
+    }
+
+    .update-page .skeleton-row.title {
+        height: 18px;
+        width: 85%;
+    }
+
+    .update-page .skeleton-row.line {
+        width: 100%;
+    }
+
+    .update-page .skeleton-row.line.last {
+        width: 60%;
+    }
 
     @keyframes skeletonShimmer {
-        0% { background-position: 100% 50%; }
-        100% { background-position: 0 50%; }
+        0% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
     }
 
     /* Reduced motion */
     @media (prefers-reduced-motion: reduce) {
+
         .update-page .news-card,
         .update-page .skeleton-row,
         .update-page .news-card h3 a,
         .update-page .news-card .news-readmore,
-        .update-page .view-all-link { animation: none !important; transition: none !important; }
-        .update-page .news-card { opacity: 1 !important; transform: none !important; }
+        .update-page .view-all-link {
+            animation: none !important;
+            transition: none !important;
+        }
+
+        .update-page .news-card {
+            opacity: 1 !important;
+            transform: none !important;
+        }
     }
 </style>
 
@@ -419,53 +552,130 @@
     <header class="update-hero">
         <span class="update-kicker">Updates</span>
         <h1>Latest <em>from the Lab</em></h1>
-        <p class="update-tagline">News, lectures, and activities from our partner institutions, refreshed automatically every day.</p>
+        <p class="update-tagline">News, lectures, and activities from our partner institutions, refreshed automatically
+            twice a week.</p>
         <div class="update-meta-bar" data-meta-bar>
             <span>Updated <time data-last-updated datetime="">just now</time></span>
             <span class="dot" aria-hidden="true"></span>
-            <span><span data-items-per-source>6</span> latest items per source</span>
+            <span>Showing the <strong data-items-per-source>6</strong> latest from each source — open the full archive at the foot of each column</span>
         </div>
     </header>
 
     <section class="update-grid" aria-label="Latest news from partner institutions">
         <article class="news-column" data-source="ucl">
             <header class="news-column-header">
+                <img class="institution-logo"
+                     src="https://idohl.org/files/asset/b3e9fc6d8a129e4de4f2070d55f7ea56ab28061f.png"
+                     alt="UCL"
+                     style="height:36px !important;width:auto !important;max-width:220px !important;max-height:36px !important;object-fit:contain !important;aspect-ratio:auto !important;border:0 !important;border-radius:0 !important;background:transparent !important;box-shadow:none !important;padding:0 !important;margin:0 !important;display:block !important;" />
                 <div class="heading-block">
-                    <span class="source-kicker">UCL Information Studies</span>
+                    <span class="source-kicker">Information Studies</span>
                     <h2>Recent News</h2>
                 </div>
-                <a class="view-all-link"
-                   href="https://www.ucl.ac.uk/arts-humanities/information-studies/news"
-                   target="_blank" rel="noopener">View all</a>
             </header>
             <div class="news-list" data-news-list="ucl" aria-busy="true">
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
             </div>
+            <a class="view-all-cta"
+               href="https://www.ucl.ac.uk/arts-humanities/information-studies/news"
+               target="_blank" rel="noopener"
+               aria-label="View all UCL Information Studies news (opens in a new tab)">
+                <span class="view-all-cta-label">View all UCL Information Studies news</span>
+                <span class="view-all-cta-arrow" aria-hidden="true">→</span>
+            </a>
         </article>
 
         <article class="news-column" data-source="tudarmstadt">
             <header class="news-column-header">
+                <img class="institution-logo"
+                     src="https://idohl.org/files/asset/f2aab904f8e78f6ac17425f054e648cd6c70c4a3.png"
+                     alt="TU Darmstadt"
+                     style="height:36px !important;width:auto !important;max-width:220px !important;max-height:36px !important;object-fit:contain !important;aspect-ratio:auto !important;border:0 !important;border-radius:0 !important;background:transparent !important;box-shadow:none !important;padding:0 !important;margin:0 !important;display:block !important;" />
                 <div class="heading-block">
-                    <span class="source-kicker">TU Darmstadt — HDSM</span>
+                    <span class="source-kicker">HDSM</span>
                     <h2>Recent News</h2>
                 </div>
-                <a class="view-all-link"
-                   href="https://hdsm.hypotheses.org/category/digital_oral_history_lab"
-                   target="_blank" rel="noopener">View all</a>
             </header>
             <div class="news-list" data-news-list="tudarmstadt" aria-busy="true">
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
-                <div class="news-skeleton"><div class="skeleton-row short"></div><div class="skeleton-row title"></div><div class="skeleton-row line"></div><div class="skeleton-row line last"></div></div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
+                <div class="news-skeleton">
+                    <div class="skeleton-row short"></div>
+                    <div class="skeleton-row title"></div>
+                    <div class="skeleton-row line"></div>
+                    <div class="skeleton-row line last"></div>
+                </div>
             </div>
+            <a class="view-all-cta"
+               href="https://hdsm.hypotheses.org/category/digital_oral_history_lab"
+               target="_blank" rel="noopener"
+               aria-label="View all TU Darmstadt HDSM posts (opens in a new tab)">
+                <span class="view-all-cta-label">View all TU Darmstadt — HDSM posts</span>
+                <span class="view-all-cta-arrow" aria-hidden="true">→</span>
+            </a>
         </article>
     </section>
 </div>
@@ -484,12 +694,12 @@
         var FALLBACK_LINKS = {
             ucl: {
                 label: 'UCL Information Studies',
-                url:   'https://www.ucl.ac.uk/arts-humanities/information-studies/news',
+                url: 'https://www.ucl.ac.uk/arts-humanities/information-studies/news',
                 blurb: 'Open the UCL Information Studies news page to see the latest announcements, studentships, and research updates.'
             },
             tudarmstadt: {
                 label: 'TU Darmstadt — HDSM',
-                url:   'https://hdsm.hypotheses.org/category/digital_oral_history_lab',
+                url: 'https://hdsm.hypotheses.org/category/digital_oral_history_lab',
                 blurb: 'Open the HDSM blog to read the latest posts on the Digital Oral History Lab from TU Darmstadt.'
             }
         };
@@ -531,11 +741,11 @@
             var dateAttr = item.date ? ' datetime="' + escapeHTML(item.date) + '"' : '';
             return ''
                 + '<article class="news-card" style="--card-idx: ' + idx + ';">'
-                +   '<a class="card-anchor" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="' + escapeHTML(item.title || '') + '"></a>'
-                +   (date ? '<time class="news-date"' + dateAttr + '>' + escapeHTML(date) + '</time>' : '')
-                +   '<h3><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(item.title || '') + '</a></h3>'
-                +   (item.excerpt ? '<p class="news-excerpt">' + escapeHTML(item.excerpt) + '</p>' : '')
-                +   '<a class="news-readmore" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Read more</a>'
+                + '<a class="card-anchor" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="' + escapeHTML(item.title || '') + '"></a>'
+                + (date ? '<time class="news-date"' + dateAttr + '>' + escapeHTML(date) + '</time>' : '')
+                + '<h3><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(item.title || '') + '</a></h3>'
+                + (item.excerpt ? '<p class="news-excerpt">' + escapeHTML(item.excerpt) + '</p>' : '')
+                + '<a class="news-readmore" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Read more</a>'
                 + '</article>';
         }
 
@@ -544,9 +754,9 @@
             if (!f) return;
             listEl.innerHTML = ''
                 + '<div class="fallback-card">'
-                +   '<h3>' + escapeHTML(f.label) + '</h3>'
-                +   '<p>' + escapeHTML(f.blurb) + '</p>'
-                +   '<a class="fallback-cta" href="' + escapeHTML(f.url) + '" target="_blank" rel="noopener">Visit the source <span aria-hidden="true">→</span></a>'
+                + '<h3>' + escapeHTML(f.label) + '</h3>'
+                + '<p>' + escapeHTML(f.blurb) + '</p>'
+                + '<a class="fallback-cta" href="' + escapeHTML(f.url) + '" target="_blank" rel="noopener">Visit the source <span aria-hidden="true">→</span></a>'
                 + '</div>';
             listEl.setAttribute('aria-busy', 'false');
         }
@@ -636,7 +846,10 @@
 
 <noscript>
     <style>
-        .update-page [aria-busy="true"] { display: none !important; }
+        .update-page [aria-busy="true"] {
+            display: none !important;
+        }
+
         .update-page .noscript-fallback {
             display: grid;
             gap: 1rem;
@@ -650,7 +863,8 @@
                     <div class="fallback-card">
                         <h3>UCL Information Studies</h3>
                         <p>Visit the UCL Information Studies news page for the latest announcements.</p>
-                        <a class="fallback-cta" href="https://www.ucl.ac.uk/arts-humanities/information-studies/news">Open UCL News →</a>
+                        <a class="fallback-cta"
+                            href="https://www.ucl.ac.uk/arts-humanities/information-studies/news">Open UCL News →</a>
                     </div>
                 </div>
             </article>
@@ -659,7 +873,8 @@
                     <div class="fallback-card">
                         <h3>TU Darmstadt — HDSM</h3>
                         <p>Visit the HDSM blog for the latest Digital Oral History Lab posts.</p>
-                        <a class="fallback-cta" href="https://hdsm.hypotheses.org/category/digital_oral_history_lab">Open HDSM Blog →</a>
+                        <a class="fallback-cta"
+                            href="https://hdsm.hypotheses.org/category/digital_oral_history_lab">Open HDSM Blog →</a>
                     </div>
                 </div>
             </article>

@@ -1,10 +1,10 @@
 name: Refresh news cache
 
 on:
-  # Daily at 06:15 UTC. GitHub may delay scheduled runs during high load —
+  # Mon & Thu at 06:15 UTC. GitHub may delay scheduled runs during high load —
   # the manual trigger below is the reliable kick if you need an immediate refresh.
   schedule:
-    - cron: '15 6 * * *'
+    - cron: '15 6 * * 1,4'
   workflow_dispatch:
 
 permissions:

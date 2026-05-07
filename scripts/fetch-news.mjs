@@ -13,7 +13,7 @@
 //       flags fetchOk=false; the other source is unaffected
 //
 //   Run:
-//     - In CI (default): .github/workflows/fetch-news.yml, daily + manual
+//     - In CI (default): .github/workflows/fetch-news.yml, Mon & Thu 06:15 UTC + manual
 //     - Locally:        cd scripts && npm install && node fetch-news.mjs
 
 import { writeFile, readFile, mkdir, rename } from 'node:fs/promises';

@@ -1,16 +1,16 @@
 # IDOHL Update Page — News Aggregator
 
 GitHub Actions workflow that pulls the latest 6 items from each partner
-institution daily and commits a JSON cache the static `Update.html` page reads
-at runtime.
+institution twice a week (Mon & Thu) and commits a JSON cache the static
+`Update.html` page reads at runtime.
 
 ## How it works
 
 ```
 ┌──────────────────────────────────────────────────┐
 │ GitHub Actions (.github/workflows/fetch-news.yml)│
-│  schedule: 15 6 * * *  (06:15 UTC daily)         │
-│  workflow_dispatch:    (manual button)           │
+│  schedule: 15 6 * * 1,4  (06:15 UTC Mon & Thu)   │
+│  workflow_dispatch:      (manual button)         │
 │   └─ node scripts/fetch-news.mjs                 │
 │       ├─ Pull TU Darmstadt RSS                   │
 │       ├─ Scrape UCL HTML (cheerio)               │
@@ -61,7 +61,7 @@ The repo is already public — `raw.githubusercontent.com` can be read anonymous
 5. **Upload `Update.html` as an Omeka-S page** and add it to navigation
    (admin UI — not automatable from this repo).
 
-After step 3, the workflow runs daily on its own. No further action.
+After step 3, the workflow runs every Monday and Thursday on its own. No further action.
 
 ## Local dev
 
