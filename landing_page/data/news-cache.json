@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-05-11T09:59:01.456Z",
+  "lastFetchedAt": "2026-05-14T08:49:44.615Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-05-11T09:59:01.456Z",
+      "lastFetchedAt": "2026-05-14T08:49:44.615Z",
       "items": [
+        {
+          "title": "New UCL research centre in knowledge organisation",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/new-ucl-research-centre-knowledge-organisation",
+          "date": "2026-05-13",
+          "excerpt": "The Department of Information Studies are very pleased to announce the launch of a new research centre: the UCL Centre for Knowledge Organisation Research (CeKOR).",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
+        },
         {
           "title": "AHRC Collaborative Doctoral Partnership (CDP) PhD Studentship",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-phd-studentship",
@@ -42,13 +49,6 @@
           "date": "2026-03-20",
           "excerpt": "Dr Andreas Vlachidis, Associate Professor at University College London's Department of Information Studies, was among the distinguished participants at the Thessaloniki Winter…",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Thessaloniki20Winter20School20participants_0.jpg.webp?itok=u5q8Q2q2"
-        },
-        {
-          "title": "Dr Andreas Vlachidis Awarded HSDS Small Grant under UKRI AHRC RICHeS Initiative",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news-ucl-information-studies/dr-andreas-vlachidis-awarded-hsds-small-grant-under-ukri-ahrc-riches-initiative",
-          "date": "2026-03-10",
-          "excerpt": "Dr Andreas Vlachidis, Associate Professor in Information Science, has been awarded funding through the HSDS Small Grants Programme.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Heritage20science20dataset20centred20on20Sir20Hans20Sloane27s20remarkable20vegetable20substances20collection.jpg.webp?itok=aO8lbhUf"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-05-11T09:59:01.456Z",
+      "lastFetchedAt": "2026-05-14T08:49:44.615Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
