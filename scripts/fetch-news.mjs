@@ -172,12 +172,27 @@ async function fetchTUDarmstadt() {
 async function fetchTUDPostImage(url) {
     const body = await httpGet(url, UCL_UA);
     if (!body) return '';
+    let raw = '';
     try {
         const $ = cheerio.load(body);
-        return ($('meta[property="og:image"]').first().attr('content') || '').trim();
+        raw = ($('meta[property="og:image"]').first().attr('content') || '').trim();
     } catch {
         return '';
     }
+    if (!raw) return '';
+    // The hypotheses.org origin has no CDN edge cache (age: 0 on every
+    // response) and is fronted by Anubis bot protection — together that
+    // means: intermittently-missing thumbnails on the Update page, and any
+    // generic image proxy (wsrv.nl, statically.io, etc.) is bounced by
+    // Anubis with a 404.
+    //
+    // hypotheses.org is WordPress, so Photon (i0.wp.com) is the right
+    // CDN: it's WordPress.com's own image proxy, gets through Anubis
+    // cleanly, edge-caches on WordPress.com's CDN, and resizes/recompresses
+    // on the fly. End result mirrors what UCL images already enjoy via
+    // UCL's Cloudflare layer.
+    const stripped = raw.replace(/^https?:\/\//i, '');
+    return `https://i0.wp.com/${stripped}?w=800&quality=82&strip=all`;
 }
 
 // ---------------------------------------------------------------------------

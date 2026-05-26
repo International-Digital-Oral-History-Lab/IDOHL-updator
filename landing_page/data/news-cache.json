@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-05-25T10:46:24.605Z",
+  "lastFetchedAt": "2026-05-26T23:01:54.780Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-05-25T10:46:24.605Z",
+      "lastFetchedAt": "2026-05-26T23:01:54.781Z",
       "items": [
         {
           "title": "New UCL research centre in knowledge organisation",
@@ -56,49 +56,49 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-05-25T10:46:24.605Z",
+      "lastFetchedAt": "2026-05-26T23:01:54.781Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
           "url": "https://hdsm.hypotheses.org/6578",
           "date": "2025-11-17",
           "excerpt": "On 9th July, Prof. Julianne Nyhan gave a lecture on “Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings” as a part of the „Digital…",
-          "image": "https://hdsm.hypotheses.org/files/2025/11/Picture1.png"
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/11/Picture1.png?w=800&quality=82&strip=all"
         },
         {
           "title": "HDSM Team contributes to the Connected Past Conference 2025 (16-19 September, Coimbra)",
           "url": "https://hdsm.hypotheses.org/5990",
           "date": "2025-09-22",
           "excerpt": "On September 16-19, the Connected Past Conference 2025 took place in Coimbra, Portugal. This assembly aims to provide discussion platforms for the development of original and…",
-          "image": "https://hdsm.hypotheses.org/files/2025/09/IMG_7562-scaled.jpeg"
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/09/IMG_7562-scaled.jpeg?w=800&quality=82&strip=all"
         },
         {
           "title": "International Digital Oral History Lab at the UCL’s Festival of Digital Research, Innovation & Scholarship",
           "url": "https://hdsm.hypotheses.org/5336",
           "date": "2025-08-25",
           "excerpt": "It is with great pleasure to share the news about the presentation of the HDSM Project at the Festival of Digital Research, Innovation & Scholarship at UCL (London) on 15th July…",
-          "image": "https://hdsm.hypotheses.org/files/2025/08/photo_2025-08-25_11-13-31.jpg"
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/08/photo_2025-08-25_11-13-31.jpg?w=800&quality=82&strip=all"
         },
         {
           "title": "The Video Recording Release of the sixth Susan Hockey Lecture by Prof. Julianne Nyhan",
           "url": "https://hdsm.hypotheses.org/5284",
           "date": "2025-07-03",
           "excerpt": "The video of the lecture is available here. The sixth Susan Hockey Lecture in Digital Humanities was given on 22 May 2025 by Prof Julianne Nyhan. It was devoted to ‘Oral History…",
-          "image": "https://hdsm.hypotheses.org/files/2025/07/Screenshot-2025-07-03-at-11.39.56.png"
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/07/Screenshot-2025-07-03-at-11.39.56.png?w=800&quality=82&strip=all"
         },
         {
           "title": "2025 Susan Hockey Lecture – Oral History as Data? Critically approaching the digital turn in method, meaning and recollection",
           "url": "https://hdsm.hypotheses.org/4911",
           "date": "2025-04-09",
           "excerpt": "We are delighted to invite you to the 2025 Susan Hockey Lecture – Oral History as Data? Critically approaching the digital turn in method, meaning and recollection – to be…",
-          "image": "https://hdsm.hypotheses.org/files/2025/04/15th-logo-colour.jpg"
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/04/15th-logo-colour.jpg?w=800&quality=82&strip=all"
         },
         {
           "title": "3 February: A Final lecture for the seminar series “Oral History and the digital transformation. Some historical, ethical and methodological remarks” by Prof. Dr. Linde Apel",
           "url": "https://hdsm.hypotheses.org/4595",
           "date": "2025-01-23",
           "excerpt": "The video recording of the video is available online via the following link. Prof. Dr. Linde Apel will give an open presentation, “Oral History and the Digital Transformation…",
-          "image": "https://hdsm.hypotheses.org/files/2025/01/New-Project-3.png"
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/01/New-Project-3.png?w=800&quality=82&strip=all"
         }
       ]
     }
