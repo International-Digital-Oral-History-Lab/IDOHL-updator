@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-06-01T12:08:28.857Z",
+  "lastFetchedAt": "2026-06-04T10:11:37.232Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-06-01T12:08:28.857Z",
+      "lastFetchedAt": "2026-06-04T10:11:37.232Z",
       "items": [
+        {
+          "title": "A UCL Inaugural lecture by Professor Elizabeth Lomas – 13 July 2026",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ucl-inaugural-lecture-professor-elizabeth-lomas-13-july-2026",
+          "date": "2026-06-02",
+          "excerpt": "In UCL’s bicentennial year, we are delighted to announce the inaugural lecture of Professor Elizabeth Lomas at 6pm on 13th July 2026 at UCL’s Bloomsbury campus.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
+        },
         {
           "title": "New UCL research centre in knowledge organisation",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/new-ucl-research-centre-knowledge-organisation",
@@ -42,13 +49,6 @@
           "date": "2026-03-20",
           "excerpt": "Invisible Hands: Migrant Labour and British Craft in the 18th Century (UCL & V&A)",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL_Welcome_2024_02.jpg.webp?itok=GC728g5s"
-        },
-        {
-          "title": "Dr Andreas Vlachidis at the Thessaloniki TELL Winter School",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/dr-andreas-vlachidis-thessaloniki-tell-winter-school",
-          "date": "2026-03-20",
-          "excerpt": "Dr Andreas Vlachidis, Associate Professor at University College London's Department of Information Studies, was among the distinguished participants at the Thessaloniki Winter…",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Thessaloniki20Winter20School20participants_0.jpg.webp?itok=u5q8Q2q2"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-06-01T12:08:28.857Z",
+      "lastFetchedAt": "2026-06-04T10:11:37.232Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
