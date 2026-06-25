@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-06-22T12:24:20.518Z",
+  "lastFetchedAt": "2026-06-25T09:41:25.467Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-06-22T12:24:20.518Z",
+      "lastFetchedAt": "2026-06-25T09:41:25.467Z",
       "items": [
+        {
+          "title": "New book - The King’s Dinner: Family, nation, and identity on the British table, 1760-1820",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/jun/new-book-kings-dinner-family-nation-and-identity-british-table-1760-1820",
+          "date": "2026-06-23",
+          "excerpt": "This new book, co-authored by Dr Adam Crymble, draws on the kitchen ledgers of King George III and King George IV to explore the significance of food in understanding British…",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Kings20Dinner20book20cover-detail.jpg.webp?itok=taZ4XGJG"
+        },
         {
           "title": "UCL Researchers Present at ISKO UK Evening Lecture Series",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/ucl-researchers-present-isko-uk-evening-lecture-series",
@@ -42,13 +49,6 @@
           "date": "2026-04-22",
           "excerpt": "Rediscovering a Woman Collector at the British Library: New Sources and Perspectives on Sarah Sophia Banks",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
-        },
-        {
-          "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-studentship-0",
-          "date": "2026-03-27",
-          "excerpt": "Moving the Frame: New Computational Practices for the Description and Organisation of the BT Film Collection",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-06-22T12:24:20.518Z",
+      "lastFetchedAt": "2026-06-25T09:41:25.467Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
