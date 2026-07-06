@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-07-02T09:30:13.418Z",
+  "lastFetchedAt": "2026-07-06T11:00:08.216Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-02T09:30:13.418Z",
+      "lastFetchedAt": "2026-07-06T11:00:08.217Z",
       "items": [
+        {
+          "title": "Katherine Knight awarded the Pratt-Severn Research Paper Award",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/katherine-knight-awarded-pratt-severn-research-paper-award",
+          "date": "2026-07-06",
+          "excerpt": "Katherine Knight, Library and Information Studies Graduate has been awarded the prestigious Pratt-Severn Research Paper Award.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
+        },
         {
           "title": "New book - The King’s Dinner: Family, nation, and identity on the British table, 1760-1820",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/jun/new-book-kings-dinner-family-nation-and-identity-british-table-1760-1820",
@@ -42,13 +49,6 @@
           "date": "2026-05-13",
           "excerpt": "The Department of Information Studies are very pleased to announce the launch of a new research centre: the UCL Centre for Knowledge Organisation Research (CeKOR).",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
-        },
-        {
-          "title": "AHRC Collaborative Doctoral Partnership (CDP) PhD Studentship",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-phd-studentship",
-          "date": "2026-04-22",
-          "excerpt": "Rediscovering a Woman Collector at the British Library: New Sources and Perspectives on Sarah Sophia Banks",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-02T09:30:13.418Z",
+      "lastFetchedAt": "2026-07-06T11:00:08.217Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
