@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-07-06T11:00:08.216Z",
+  "lastFetchedAt": "2026-07-09T09:55:31.633Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-06T11:00:08.217Z",
+      "lastFetchedAt": "2026-07-09T09:55:31.633Z",
       "items": [
         {
           "title": "Katherine Knight awarded the Pratt-Severn Research Paper Award",
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-06T11:00:08.217Z",
+      "lastFetchedAt": "2026-07-09T09:55:31.633Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
