@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-07-09T09:55:31.633Z",
+  "lastFetchedAt": "2026-07-13T09:45:48.913Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-09T09:55:31.633Z",
+      "lastFetchedAt": "2026-07-13T09:45:48.914Z",
       "items": [
+        {
+          "title": "Hannah Smyth elected Fellow of the Royal Historical Society",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/hannah-smyth-elected-fellow-royal-historical-society",
+          "date": "2026-07-09",
+          "excerpt": "Hannah Smyth, Lecturer in Archives and Records Management has been elected as a Fellow of the Royal Historical Society.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL_Welcome_2024_02.jpg.webp?itok=GC728g5s"
+        },
         {
           "title": "Katherine Knight awarded the Pratt-Severn Research Paper Award",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/katherine-knight-awarded-pratt-severn-research-paper-award",
@@ -42,13 +49,6 @@
           "date": "2026-06-02",
           "excerpt": "In UCL’s bicentennial year, we are delighted to announce the inaugural lecture of Professor Elizabeth Lomas at 6pm on 13th July 2026 at UCL’s Bloomsbury campus.",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
-        },
-        {
-          "title": "New UCL research centre in knowledge organisation",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/new-ucl-research-centre-knowledge-organisation",
-          "date": "2026-05-13",
-          "excerpt": "The Department of Information Studies are very pleased to announce the launch of a new research centre: the UCL Centre for Knowledge Organisation Research (CeKOR).",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-09T09:55:31.633Z",
+      "lastFetchedAt": "2026-07-13T09:45:48.914Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
