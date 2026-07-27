@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-07-23T08:43:00.435Z",
+  "lastFetchedAt": "2026-07-27T10:06:20.545Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-23T08:43:00.435Z",
+      "lastFetchedAt": "2026-07-27T10:06:20.545Z",
       "items": [
         {
           "title": "Hannah Smyth elected Fellow of the Royal Historical Society",
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-07-23T08:43:00.435Z",
+      "lastFetchedAt": "2026-07-27T10:06:20.545Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
