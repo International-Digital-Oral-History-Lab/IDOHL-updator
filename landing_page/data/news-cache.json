@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-08-13T07:50:02.990Z",
+  "lastFetchedAt": "2026-08-17T07:13:27.421Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-08-13T07:50:02.990Z",
+      "lastFetchedAt": "2026-08-17T07:13:27.421Z",
       "items": [
         {
           "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-08-13T07:50:02.990Z",
+      "lastFetchedAt": "2026-08-17T07:13:27.421Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
