@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-08-17T07:13:27.421Z",
+  "lastFetchedAt": "2026-08-20T07:03:39.996Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-08-17T07:13:27.421Z",
+      "lastFetchedAt": "2026-08-20T07:03:39.996Z",
       "items": [
+        {
+          "title": "Strong UCL contingent at the Archival Research and Education Institute 2026 Conference",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/strong-ucl-contingent-archival-research-and-education-institute-2026-conference",
+          "date": "2026-08-17",
+          "excerpt": "The Archival Research and Education Institute 2026 Conference took place on July 20-24 at the University of British Columbia in Vancouver, Canada.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/signal-2026-07-24-19-20-44-549.jpg.webp?itok=YnDKkPyk"
+        },
         {
           "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-studentship",
@@ -42,13 +49,6 @@
           "date": "2026-06-08",
           "excerpt": "Two researchers from UCL's Department of Information Studies presented their work at the ISKO UK evening lecture series.",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
-        },
-        {
-          "title": "From Text to Knowledge: Dr Andreas Vlachidis seminar at SPRU, University of Sussex",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/text-knowledge-dr-andreas-vlachidis-seminar-spru-university-sussex",
-          "date": "2026-06-08",
-          "excerpt": "Dr Andreas Vlachidis, Associate Professor in Information Science at UCL's Department of Information Studies, delivered a seminar to the Korean research group at the Science Policy…",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/IMG_5106.jpeg.webp?itok=XLxmgdh8"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-08-17T07:13:27.421Z",
+      "lastFetchedAt": "2026-08-20T07:03:39.996Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
