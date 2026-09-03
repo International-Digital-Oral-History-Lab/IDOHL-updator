@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-08-31T13:41:43.323Z",
+  "lastFetchedAt": "2026-09-03T11:09:11.195Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-08-31T13:41:43.323Z",
+      "lastFetchedAt": "2026-09-03T11:09:11.195Z",
       "items": [
+        {
+          "title": "Celebrating our Faculty's 2025/26 achievements",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/sep/celebrating-our-facultys-202526-achievements",
+          "date": "2026-09-02",
+          "excerpt": "As we approach the start of a new academic year, 2025/26 saw a plethora of achievements and accolades from our departments.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL20Brand20Photography_Sam20Robinson_2026_111.jpg.webp?itok=xJ6f5tbY"
+        },
         {
           "title": "Strong UCL contingent at the Archival Research and Education Institute 2026 Conference",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/strong-ucl-contingent-archival-research-and-education-institute-2026-conference",
@@ -42,13 +49,6 @@
           "date": "2026-06-23",
           "excerpt": "This new book, co-authored by Dr Adam Crymble, draws on the kitchen ledgers of King George III and King George IV to explore the significance of food in understanding British…",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Kings20Dinner20book20cover-detail.jpg.webp?itok=taZ4XGJG"
-        },
-        {
-          "title": "UCL Researchers Present at ISKO UK Evening Lecture Series",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/ucl-researchers-present-isko-uk-evening-lecture-series",
-          "date": "2026-06-08",
-          "excerpt": "Two researchers from UCL's Department of Information Studies presented their work at the ISKO UK evening lecture series.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-08-31T13:41:43.323Z",
+      "lastFetchedAt": "2026-09-03T11:09:11.195Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
