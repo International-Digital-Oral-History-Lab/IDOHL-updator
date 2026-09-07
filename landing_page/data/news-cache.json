@@ -1,13 +1,34 @@
 {
-  "lastFetchedAt": "2026-09-03T11:09:11.195Z",
+  "lastFetchedAt": "2026-09-07T12:24:58.323Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-09-03T11:09:11.195Z",
+      "lastFetchedAt": "2026-09-07T12:24:58.323Z",
       "items": [
+        {
+          "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-studentship",
+          "date": "2026-09-04",
+          "excerpt": "Invisible Hands: Migrant Labour and British Craft in the 18th Century (UCL & V&A)",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
+        },
+        {
+          "title": "AHRC Collaborative Doctoral Partnership (CDP) PhD Studentship",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-phd-studentship",
+          "date": "2026-09-04",
+          "excerpt": "Rediscovering a Woman Collector at the British Library: New Sources and Perspectives on Sarah Sophia Banks",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
+        },
+        {
+          "title": "2026 Widening Participation in Archives and Records Management Summer School",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/sep/2026-widening-participation-archives-and-records-management-summer-school",
+          "date": "2026-09-03",
+          "excerpt": "The 2026 Widening Participation Summer School brought prospective archivists and recordkeepers to UCL for learning and networking, breaking down barriers to entering information…",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/01_masthead.jpg.webp?itok=bVIfbXjz"
+        },
         {
           "title": "Celebrating our Faculty's 2025/26 achievements",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/sep/celebrating-our-facultys-202526-achievements",
@@ -23,32 +44,11 @@
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/signal-2026-07-24-19-20-44-549.jpg.webp?itok=YnDKkPyk"
         },
         {
-          "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-studentship",
-          "date": "2026-08-06",
-          "excerpt": "Invisible Hands: Migrant Labour and British Craft in the 18th Century (UCL & V&A)",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
-        },
-        {
           "title": "Hannah Smyth elected Fellow of the Royal Historical Society",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/hannah-smyth-elected-fellow-royal-historical-society",
           "date": "2026-07-09",
           "excerpt": "Hannah Smyth, Lecturer in Archives and Records Management has been elected as a Fellow of the Royal Historical Society.",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL_Welcome_2024_02.jpg.webp?itok=GC728g5s"
-        },
-        {
-          "title": "Katherine Knight awarded the Pratt-Severn Research Paper Award",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/katherine-knight-awarded-pratt-severn-research-paper-award",
-          "date": "2026-07-06",
-          "excerpt": "Katherine Knight, Library and Information Studies Graduate has been awarded the prestigious Pratt-Severn Research Paper Award.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
-        },
-        {
-          "title": "New book - The King’s Dinner: Family, nation, and identity on the British table, 1760-1820",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/jun/new-book-kings-dinner-family-nation-and-identity-british-table-1760-1820",
-          "date": "2026-06-23",
-          "excerpt": "This new book, co-authored by Dr Adam Crymble, draws on the kitchen ledgers of King George III and King George IV to explore the significance of food in understanding British…",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Kings20Dinner20book20cover-detail.jpg.webp?itok=taZ4XGJG"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-09-03T11:09:11.195Z",
+      "lastFetchedAt": "2026-09-07T12:24:58.323Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
