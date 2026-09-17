@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-09-14T12:39:27.814Z",
+  "lastFetchedAt": "2026-09-17T11:36:07.937Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-09-14T12:39:27.814Z",
+      "lastFetchedAt": "2026-09-17T11:36:07.937Z",
       "items": [
         {
           "title": "Deans past and present: shaping the UCL Faculty of Arts and Humanities",
@@ -14,20 +14,6 @@
           "date": "2026-09-11",
           "excerpt": "To mark UCL's 2026 graduation celebrations, we spotlight two prominent figures from the Faculty of Arts and Humanities: past Dean Professor Henry Woudhuysen and present Dean…",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/A20and20H20Dean20Stella20Bruzzi20and20past20Dean2C20Henry20Woudhuysen_1.jpg.webp?itok=5tvB_6Wo"
-        },
-        {
-          "title": "AHRC Collaborative Doctoral Partnership (CDP) Studentship",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-studentship",
-          "date": "2026-09-04",
-          "excerpt": "Invisible Hands: Migrant Labour and British Craft in the 18th Century (UCL & V&A)",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
-        },
-        {
-          "title": "AHRC Collaborative Doctoral Partnership (CDP) PhD Studentship",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/ahrc-collaborative-doctoral-partnership-cdp-phd-studentship",
-          "date": "2026-09-04",
-          "excerpt": "Rediscovering a Woman Collector at the British Library: New Sources and Perspectives on Sarah Sophia Banks",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
         },
         {
           "title": "2026 Widening Participation in Archives and Records Management Summer School",
@@ -49,6 +35,20 @@
           "date": "2026-08-17",
           "excerpt": "The Archival Research and Education Institute 2026 Conference took place on July 20-24 at the University of British Columbia in Vancouver, Canada.",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/signal-2026-07-24-19-20-44-549.jpg.webp?itok=YnDKkPyk"
+        },
+        {
+          "title": "Hannah Smyth elected Fellow of the Royal Historical Society",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/hannah-smyth-elected-fellow-royal-historical-society",
+          "date": "2026-07-09",
+          "excerpt": "Hannah Smyth, Lecturer in Archives and Records Management has been elected as a Fellow of the Royal Historical Society.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL_Welcome_2024_02.jpg.webp?itok=GC728g5s"
+        },
+        {
+          "title": "Katherine Knight awarded the Pratt-Severn Research Paper Award",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/katherine-knight-awarded-pratt-severn-research-paper-award",
+          "date": "2026-07-06",
+          "excerpt": "Katherine Knight, Library and Information Studies Graduate has been awarded the prestigious Pratt-Severn Research Paper Award.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-09-14T12:39:27.814Z",
+      "lastFetchedAt": "2026-09-17T11:36:07.937Z",
       "items": [
         {
           "title": "Video Recording of the Open Lecture on Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings by Prof. J. Nyhan is available online",
