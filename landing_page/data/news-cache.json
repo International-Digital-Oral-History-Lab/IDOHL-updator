@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-10-12T15:15:06.708Z",
+  "lastFetchedAt": "2026-10-15T11:21:37.615Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-10-12T15:15:06.708Z",
+      "lastFetchedAt": "2026-10-15T11:21:37.615Z",
       "items": [
         {
           "title": "Deans past and present: shaping the UCL Faculty of Arts and Humanities",
@@ -56,8 +56,22 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-10-12T15:15:06.708Z",
+      "lastFetchedAt": "2026-10-15T11:21:37.615Z",
       "items": [
+        {
+          "title": "HDSM Team at the NKOS Workshop at DCMI 2026 (3 August, Seoul)",
+          "url": "https://hdsm.hypotheses.org/8177",
+          "date": "2026-10-14",
+          "excerpt": "On 3 August, the NKOS Workshop took place at DCMI 2026, the 24th International Conference on Dublin Core and Metadata Applications, held at the National Library of Korea in Seoul…",
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2026/10/NKOS-Workshop_2-scaled.jpg?w=800&quality=82&strip=all"
+        },
+        {
+          "title": "HDSM Team contributes to Digital Humanities 2026 (27-31 July, Daejeon)",
+          "url": "https://hdsm.hypotheses.org/8168",
+          "date": "2026-10-14",
+          "excerpt": "On 27-31 July, Digital Humanities 2026 (DH2026), the 36th annual conference of the Alliance of Digital Humanities Organizations (ADHO), took place at the Daejeon Convention Center…",
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2026/10/DH2026_2-scaled.jpg?w=800&quality=82&strip=all"
+        },
         {
           "title": "Prof Nyhan to participate in plenary panel at DH Benelux 2026",
           "url": "https://hdsm.hypotheses.org/8041",
@@ -85,20 +99,6 @@
           "date": "2025-08-25",
           "excerpt": "It is with great pleasure to share the news about the presentation of the HDSM Project at the Festival of Digital Research, Innovation & Scholarship at UCL (London) on 15th July…",
           "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/08/photo_2025-08-25_11-13-31.jpg?w=800&quality=82&strip=all"
-        },
-        {
-          "title": "The Video Recording Release of the sixth Susan Hockey Lecture by Prof. Julianne Nyhan",
-          "url": "https://hdsm.hypotheses.org/5284",
-          "date": "2025-07-03",
-          "excerpt": "The video of the lecture is available here. The sixth Susan Hockey Lecture in Digital Humanities was given on 22 May 2025 by Prof Julianne Nyhan. It was devoted to ‘Oral History…",
-          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/07/Screenshot-2025-07-03-at-11.39.56.png?w=800&quality=82&strip=all"
-        },
-        {
-          "title": "2025 Susan Hockey Lecture – Oral History as Data? Critically approaching the digital turn in method, meaning and recollection",
-          "url": "https://hdsm.hypotheses.org/4911",
-          "date": "2025-04-09",
-          "excerpt": "We are delighted to invite you to the 2025 Susan Hockey Lecture – Oral History as Data? Critically approaching the digital turn in method, meaning and recollection – to be…",
-          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/04/15th-logo-colour.jpg?w=800&quality=82&strip=all"
         }
       ]
     }
