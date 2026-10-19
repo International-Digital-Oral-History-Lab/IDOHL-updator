@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-10-15T11:21:37.615Z",
+  "lastFetchedAt": "2026-10-19T13:03:48.237Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-10-15T11:21:37.615Z",
+      "lastFetchedAt": "2026-10-19T13:03:48.237Z",
       "items": [
+        {
+          "title": "Faculty of Arts and Humanities welcomes students with week of induction activities",
+          "url": "https://www.ucl.ac.uk/arts-humanities/ucl-faculty-arts-humanities/faculty-arts-and-humanities-welcomes-students-week-induction-activities",
+          "date": "2026-10-14",
+          "excerpt": "Students took part in a week of induction activities, meeting peers and staff from across the UCL Faculty of Arts and Humanities ahead of the new academic year.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Tea-with-dean-hero.jpg.webp?itok=2KWxxbjc"
+        },
         {
           "title": "Deans past and present: shaping the UCL Faculty of Arts and Humanities",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/sep/deans-past-and-present-shaping-ucl-faculty-arts-and-humanities",
@@ -42,13 +49,6 @@
           "date": "2026-07-09",
           "excerpt": "Hannah Smyth, Lecturer in Archives and Records Management has been elected as a Fellow of the Royal Historical Society.",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL_Welcome_2024_02.jpg.webp?itok=GC728g5s"
-        },
-        {
-          "title": "Katherine Knight awarded the Pratt-Severn Research Paper Award",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/katherine-knight-awarded-pratt-severn-research-paper-award",
-          "date": "2026-07-06",
-          "excerpt": "Katherine Knight, Library and Information Studies Graduate has been awarded the prestigious Pratt-Severn Research Paper Award.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/fallback-images/UCL_Welcome_2024_02.jpg"
         }
       ]
     },
@@ -56,8 +56,15 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-10-15T11:21:37.615Z",
+      "lastFetchedAt": "2026-10-19T13:03:48.237Z",
       "items": [
+        {
+          "title": "Data Sovereignty, Stewardship, and Generative AI in Oral History",
+          "url": "https://hdsm.hypotheses.org/8199",
+          "date": "2026-10-17",
+          "excerpt": "The International Digital Oral History Lab has published Data Sovereignty, Stewardship, and Generative AI in Oral History, a working paper examining consent, governance and…",
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2026/10/Voices-Becoming-Living-Archives.png?w=800&quality=82&strip=all"
+        },
         {
           "title": "HDSM Team at the NKOS Workshop at DCMI 2026 (3 August, Seoul)",
           "url": "https://hdsm.hypotheses.org/8177",
@@ -92,13 +99,6 @@
           "date": "2025-09-22",
           "excerpt": "On September 16-19, the Connected Past Conference 2025 took place in Coimbra, Portugal. This assembly aims to provide discussion platforms for the development of original and…",
           "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/09/IMG_7562-scaled.jpeg?w=800&quality=82&strip=all"
-        },
-        {
-          "title": "International Digital Oral History Lab at the UCL’s Festival of Digital Research, Innovation & Scholarship",
-          "url": "https://hdsm.hypotheses.org/5336",
-          "date": "2025-08-25",
-          "excerpt": "It is with great pleasure to share the news about the presentation of the HDSM Project at the Festival of Digital Research, Innovation & Scholarship at UCL (London) on 15th July…",
-          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/08/photo_2025-08-25_11-13-31.jpg?w=800&quality=82&strip=all"
         }
       ]
     }
