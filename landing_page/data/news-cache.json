@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-10-22T11:44:53.542Z",
+  "lastFetchedAt": "2026-10-26T12:52:58.073Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-10-22T11:44:53.542Z",
+      "lastFetchedAt": "2026-10-26T12:52:58.073Z",
       "items": [
         {
           "title": "Faculty of Arts and Humanities welcomes students with week of induction activities",
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-10-22T11:44:53.542Z",
+      "lastFetchedAt": "2026-10-26T12:52:58.073Z",
       "items": [
         {
           "title": "Data Sovereignty, Stewardship, and Generative AI in Oral History",
