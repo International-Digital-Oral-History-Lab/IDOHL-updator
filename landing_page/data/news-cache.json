@@ -1,13 +1,34 @@
 {
-  "lastFetchedAt": "2026-11-02T15:40:41.220Z",
+  "lastFetchedAt": "2026-11-05T14:32:49.522Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-11-02T15:40:41.220Z",
+      "lastFetchedAt": "2026-11-05T14:32:49.522Z",
       "items": [
+        {
+          "title": "Dr Andreas Vlachidis at the Thessaloniki TELL Winter School",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/dr-andreas-vlachidis-thessaloniki-tell-winter-school",
+          "date": "2026-11-04",
+          "excerpt": "Dr Andreas Vlachidis, Associate Professor at University College London's Department of Information Studies, was among the distinguished participants at the Thessaloniki Winter…",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Thessaloniki20Winter20School20participants_0.jpg.webp?itok=u5q8Q2q2"
+        },
+        {
+          "title": "UCL’s Andreas Vlachidis delivers keynote at the University of Jena",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/ucls-andreas-vlachidis-delivers-keynote-university-jena",
+          "date": "2026-11-03",
+          "excerpt": "Dr Andreas Vlachidis, Associate Professor in the UCL Department of Information Studies, gave an international keynote at the University of Jena on 27 October 2026.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Digital20Collections-39.jpg.webp?itok=M9K3-Rbq"
+        },
+        {
+          "title": "CeKOR public lecture by Dr Jack Andersen, University of Copenhagen",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/cekor-public-lecture-dr-jack-andersen-university-copenhagen",
+          "date": "2026-11-03",
+          "excerpt": "On 6th October 2026, we were delighted to have been joined by Dr Jack Andersen for the University of Copenhagen, who came to visit CeKOR and to give a public lecture.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/IMG_7951.JPG.webp?itok=xNQDds4e"
+        },
         {
           "title": "Faculty of Arts and Humanities welcomes students with week of induction activities",
           "url": "https://www.ucl.ac.uk/arts-humanities/ucl-faculty-arts-humanities/faculty-arts-and-humanities-welcomes-students-week-induction-activities",
@@ -28,27 +49,6 @@
           "date": "2026-09-03",
           "excerpt": "The 2026 Widening Participation Summer School brought prospective archivists and recordkeepers to UCL for learning and networking, breaking down barriers to entering information…",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/01_masthead.jpg.webp?itok=bVIfbXjz"
-        },
-        {
-          "title": "Celebrating our Faculty's 2025/26 achievements",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/2026/sep/celebrating-our-facultys-202526-achievements",
-          "date": "2026-09-02",
-          "excerpt": "As we approach the start of a new academic year, 2025/26 saw a plethora of achievements and accolades from our departments.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL20Brand20Photography_Sam20Robinson_2026_111.jpg.webp?itok=xJ6f5tbY"
-        },
-        {
-          "title": "Strong UCL contingent at the Archival Research and Education Institute 2026 Conference",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/strong-ucl-contingent-archival-research-and-education-institute-2026-conference",
-          "date": "2026-08-17",
-          "excerpt": "The Archival Research and Education Institute 2026 Conference took place on July 20-24 at the University of British Columbia in Vancouver, Canada.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/signal-2026-07-24-19-20-44-549.jpg.webp?itok=YnDKkPyk"
-        },
-        {
-          "title": "Hannah Smyth elected Fellow of the Royal Historical Society",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/hannah-smyth-elected-fellow-royal-historical-society",
-          "date": "2026-07-09",
-          "excerpt": "Hannah Smyth, Lecturer in Archives and Records Management has been elected as a Fellow of the Royal Historical Society.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/UCL_Welcome_2024_02.jpg.webp?itok=GC728g5s"
         }
       ]
     },
@@ -56,8 +56,15 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-11-02T15:40:41.220Z",
+      "lastFetchedAt": "2026-11-05T14:32:49.522Z",
       "items": [
+        {
+          "title": "Recording Available: Introduction to Data Sovereignty / Digital Independence in Research",
+          "url": "https://hdsm.hypotheses.org/8575",
+          "date": "2026-11-03",
+          "excerpt": "Data Sovereignty talk recording is available on OpenLearnWare TU Darmstadt We are pleased to announce that the recording of “Introduction to Data Sovereignty / Digital…",
+          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2026/11/Digital-Methods-and-Data-in-History.png?w=800&quality=82&strip=all"
+        },
         {
           "title": "Data Sovereignty, Stewardship, and Generative AI in Oral History",
           "url": "https://hdsm.hypotheses.org/8199",
@@ -92,13 +99,6 @@
           "date": "2025-11-17",
           "excerpt": "On 9th July, Prof. Julianne Nyhan gave a lecture on “Mixed-methods Digital Oral History: Reflections on Limits, Horizons and Emerging Findings” as a part of the „Digital…",
           "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/11/Picture1.png?w=800&quality=82&strip=all"
-        },
-        {
-          "title": "HDSM Team contributes to the Connected Past Conference 2025 (16-19 September, Coimbra)",
-          "url": "https://hdsm.hypotheses.org/5990",
-          "date": "2025-09-22",
-          "excerpt": "On September 16-19, the Connected Past Conference 2025 took place in Coimbra, Portugal. This assembly aims to provide discussion platforms for the development of original and…",
-          "image": "https://i0.wp.com/hdsm.hypotheses.org/files/2025/09/IMG_7562-scaled.jpeg?w=800&quality=82&strip=all"
         }
       ]
     }
