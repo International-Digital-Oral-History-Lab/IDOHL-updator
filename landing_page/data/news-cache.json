@@ -1,12 +1,12 @@
 {
-  "lastFetchedAt": "2026-11-09T16:07:32.982Z",
+  "lastFetchedAt": "2026-11-12T15:05:05.099Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-11-09T16:07:32.983Z",
+      "lastFetchedAt": "2026-11-12T15:05:05.099Z",
       "items": [
         {
           "title": "Dr Andreas Vlachidis at the Thessaloniki TELL Winter School",
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-11-09T16:07:32.983Z",
+      "lastFetchedAt": "2026-11-12T15:05:05.099Z",
       "items": [
         {
           "title": "Recording Available: Introduction to Data Sovereignty / Digital Independence in Research",
