@@ -1,13 +1,20 @@
 {
-  "lastFetchedAt": "2026-11-16T15:36:25.436Z",
+  "lastFetchedAt": "2026-11-19T15:39:58.989Z",
   "itemsPerFeed": 6,
   "sources": {
     "ucl": {
       "label": "UCL Information Studies",
       "url": "https://www.ucl.ac.uk/arts-humanities/information-studies/news",
       "fetchOk": true,
-      "lastFetchedAt": "2026-11-16T15:36:25.436Z",
+      "lastFetchedAt": "2026-11-19T15:39:58.989Z",
       "items": [
+        {
+          "title": "CeKOR public lecture by Dr Jack Andersen, University of Copenhagen",
+          "url": "https://www.ucl.ac.uk/arts-humanities/news/cekor-public-lecture-dr-jack-andersen-university-copenhagen",
+          "date": "2026-11-18",
+          "excerpt": "On 6th October 2026, we were delighted to have been joined by Dr Jack Andersen for the University of Copenhagen, who came to visit CeKOR and to give a public lecture.",
+          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/IMG_7951.JPG.webp?itok=xNQDds4e"
+        },
         {
           "title": "Dr Andreas Vlachidis at the Thessaloniki TELL Winter School",
           "url": "https://www.ucl.ac.uk/arts-humanities/news/dr-andreas-vlachidis-thessaloniki-tell-winter-school",
@@ -21,13 +28,6 @@
           "date": "2026-11-03",
           "excerpt": "Dr Andreas Vlachidis, Associate Professor in the UCL Department of Information Studies, gave an international keynote at the University of Jena on 27 October 2026.",
           "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/Digital20Collections-39.jpg.webp?itok=M9K3-Rbq"
-        },
-        {
-          "title": "CeKOR public lecture by Dr Jack Andersen, University of Copenhagen",
-          "url": "https://www.ucl.ac.uk/arts-humanities/news/cekor-public-lecture-dr-jack-andersen-university-copenhagen",
-          "date": "2026-11-03",
-          "excerpt": "On 6th October 2026, we were delighted to have been joined by Dr Jack Andersen for the University of Copenhagen, who came to visit CeKOR and to give a public lecture.",
-          "image": "https://www.ucl.ac.uk/arts-humanities/sites/arts_humanities/files/styles/funnelback/public/IMG_7951.JPG.webp?itok=xNQDds4e"
         },
         {
           "title": "Faculty of Arts and Humanities welcomes students with week of induction activities",
@@ -56,7 +56,7 @@
       "label": "TU Darmstadt — HDSM",
       "url": "https://hdsm.hypotheses.org/category/digital_oral_history_lab",
       "fetchOk": true,
-      "lastFetchedAt": "2026-11-16T15:36:25.436Z",
+      "lastFetchedAt": "2026-11-19T15:39:58.989Z",
       "items": [
         {
           "title": "Recording Available: Introduction to Data Sovereignty / Digital Independence in Research",
